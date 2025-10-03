@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #e6edf3;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-bottom: 1px solid #30363d;
+}
+
+h1 {
+    color: #2f81f7;
+    margin-bottom: 10px;
+}
+
+.demo-container {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.demo-panel {
+    flex: 1;
+    min-width: 300px;
+    background-color: #161b22;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.panel-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2f81f7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vulnerable .panel-title {
+    color: #f85149;
+}
+
+.protected .panel-title {
+    color: #3fb950;
+}
+
+.status {
+    font-size: 0.9rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: #30363d;
+}
+
+.vulnerable .status {
+    background-color: #f85149;
+    color: white;
+}
+
+.protected .status {
+    background-color: #3fb950;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    background-color: #0d1117;
+    color: #e6edf3;
+    font-size: 16px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+    border-color: #2f81f7;
+}
+
+.btn-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.login-btn {
+    background-color: #2f81f7;
+    color: white;
+    flex: 2;
+}
+
+.login-btn:hover {
+    background-color: #1c6bca;
+}
+
+.injection-btn {
+    background-color: #d29922;
+    color: white;
+    flex: 1;
+}
+
+.injection-btn:hover {
+    background-color: #bb8009;
+}
+
+.reset-btn {
+    background-color: #f85149;
+    color: white;
+    flex: 1;
+}
+
+.reset-btn:hover {
+    background-color: #da3633;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #21262d;
+    min-height: 60px;
+    overflow: auto;
+    transition: all 0.3s ease;
+}
+
+.result table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.result th, .result td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #30363d;
+}
+
+.result th {
+    background-color: #161b22;
+    color: #2f81f7;
+}
+
+.result tr:nth-child(even) {
+    background-color: rgba(13, 17, 23, 0.5);
+}
+
+.result tr:hover {
+    background-color: #1f2937;
+}
+
+.hint {
+    color: #d29922;
+    font-style: italic;
+}
+
+.success {
+    color: #3fb950;
+    border-left: 4px solid #3fb950;
+}
+
+.error {
+    color: #f85149;
+    border-left: 4px solid #f85149;
+}
+
+.sql-preview {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #0d1117;
+    border-radius: 6px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    border: 1px solid #30363d;
+}
+
+/* User table styles */
+.user-table {
+    margin-top: 15px;
+    overflow-x: auto;
+    background-color: #0d1117;
+    border-radius: 6px;
+    padding: 15px;
+    border: 1px solid #30363d;
+}
+
+.user-table h4 {
+    margin-bottom: 10px;
+    color: #2f81f7;
+}
+
+.user-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.user-table th, .user-table td {
+    border: 1px solid #30363d;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.user-table th {
+    background-color: #161b22;
+    font-weight: 600;
+    color: #2f81f7;
+}
+
+.user-table tr:nth-child(even) {
+    background-color: rgba(13, 17, 23, 0.5);
+}
+
+.user-table tr:hover {
+    background-color: #1f2937;
+}
+
+.hint {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #1c6bca;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    border-top: 1px solid #30363d;
+    color: #7d8590;
+}
+
+@media (max-width: 768px) {
+    .demo-container {
+        flex-direction: column;
+    }
+}
