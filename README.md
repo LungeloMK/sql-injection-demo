@@ -2,7 +2,7 @@
 
 A comprehensive educational demonstration of SQL injection vulnerabilities and how to prevent them. This project showcases both vulnerable and secure implementations of user authentication systems.
 
-## 🎯 Purpose
+##  Purpose
 
 This demo is designed to help developers understand:
 - How SQL injection attacks work
@@ -10,14 +10,14 @@ This demo is designed to help developers understand:
 - Best practices for preventing SQL injection
 - The importance of parameterized queries
 
-## 🚀 Features
+##  Features
 
 - **Interactive Demo**: Side-by-side comparison of vulnerable vs. secure login forms
 - **Real-time SQL Preview**: See exactly what SQL queries are being executed
 - **Educational Examples**: Pre-configured injection attempts to demonstrate the concepts
 - **Visual Feedback**: Clear indicators showing the difference between secure and vulnerable code
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 SQL Injection Demo/
@@ -55,7 +55,7 @@ SQL Injection Demo/
 - Try the same injection attempt
 - Notice how the secure implementation prevents the attack
 
-## 🔍 What You'll Learn
+##  What You'll Learn
 
 ### SQL Injection Basics
 - **String Concatenation Vulnerability**: How unsanitized user input can break SQL syntax
@@ -67,11 +67,11 @@ SQL Injection Demo/
 - **Input Validation**: Sanitizing and validating user input
 - **Least Privilege**: Using database accounts with minimal necessary permissions
 
-## 🔒 Security Notes
+##  Security Notes
 
 ⚠️ **Important**: This demo is for educational purposes only. The vulnerable code examples should NEVER be used in production environments.
 
-## 🎓 Educational Value
+##  Educational Value
 
 This project is perfect for:
 - **Web Development Students**: Understanding security fundamentals
@@ -79,13 +79,13 @@ This project is perfect for:
 - **Code Reviews**: Demonstrating secure coding practices
 - **Team Training**: Raising awareness about common vulnerabilities
 
-## 📚 Additional Resources
+##  Additional Resources
 
 - [OWASP SQL Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 - [Secure Coding Practices](https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/)
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! If you'd like to improve this educational demo:
 1. Fork the repository
@@ -93,7 +93,7 @@ Contributions are welcome! If you'd like to improve this educational demo:
 3. Make your improvements
 4. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is open source and available under the [MIT License](LICENSE).
 
